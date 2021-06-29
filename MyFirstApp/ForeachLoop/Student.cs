@@ -16,5 +16,16 @@ namespace MyFirstApp.ForeachLoop
 
         public int Age { get; set; }
 
+        public override bool Equals(object obj)
+        {
+            return obj is Student student && StudentId == student.StudentId && Name == student.Name && Surname == student.Surname && Age == student.Age; 
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(StudentId, Name, Surname, Age);
+
+        }
+
     }
 }
