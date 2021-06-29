@@ -39,5 +39,10 @@ namespace MyFirstApp.ForeachLoop
                 MessageBox.Show(((Student)_student).Name + " " + ((Student)_student).Surname );
             }
         }
+
+        private void txtStudentId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

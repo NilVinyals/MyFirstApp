@@ -72,6 +72,7 @@
             this.txtStudentId.Name = "txtStudentId";
             this.txtStudentId.Size = new System.Drawing.Size(199, 22);
             this.txtStudentId.TabIndex = 4;
+            this.txtStudentId.TextChanged += new System.EventHandler(this.txtStudentId_TextChanged);
             // 
             // frmForEach
             // 

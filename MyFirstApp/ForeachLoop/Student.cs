@@ -8,7 +8,7 @@ namespace MyFirstApp.ForeachLoop
 {
     class Student
     {
-        public int StudentId { get; set; } // genera ua variable privada per sota
+        public int StudentId { get; set; } // genera ua variable privada per sota, per fer-ho al instant escriure prop
 
         public String Name { get; set; }  // cntrol k + cntrol d per tabular bé tot
 
