@@ -26,16 +26,16 @@ namespace MyFirstApp.WhileLoop
             student.Surname = txtSurname.Text;
             student.Age = Convert.ToInt32(txtAge.Text);
 
-            var students = new Dictionary<int, Student>();
-            students.Add(student.StudentId, student);
+            var students = new Dictionary<Guid, Student>();
+            students.Add(student.Guid, student);
             int i = 0;
 
             while (i < students.Count)
             {
-                KeyValuePair<int, Student> entry = students.ElementAt(i);
+                KeyValuePair<Guid, Student> entry = students.ElementAt(i);
                 if (entry.Value.Name.Equals("Pepe"))
                 {
-                    MessageBox.Show("Pepe is found: " + entry.Value.Name);
+                    MessageBox.Show("Pepe is found: " + entry.Value.Name + "is welcome and his Guid is "+ entry.Value.Guid.ToString());
                 }
                 i++;
             }
